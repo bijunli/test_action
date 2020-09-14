@@ -3,6 +3,7 @@ p = re.compile(r"(.*)(1)[^0](.*)")
 a= p.match('1分')
 print(a)
 print('测试成功')
+print('测试第二次')
 # m = [1,2,3]
 # n= 4 in
 # inputlink = {}
