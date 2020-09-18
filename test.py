@@ -1,9 +1,13 @@
 import re
-p = re.compile(r"(.*)(1)[^0](.*)")
-a= p.match('1分')
+p = re.compile(r'(.*)(全部打勾|全打勾)(.*)')
+a= p.match('全部打勾吧dsdd ')
 print(a)
 print('测试成功')
 print('测试第二次')
+punct = '！？｡。，？＂＃＄％＆＇（）＊＋，－／：；＜＝＞＠［＼］＾＿｀｛｜｝～｟｠｢｣､、〃》「」『』【】〔〕〖〗〘〙〚〛〜〝〞〟〰〾〿–—‘’‛“”„‟…‧﹏.?!,.~ '
+result = re.sub(r"[%s]+" % punct, "", '嗯 好')
+result = result.strip()
+print(result)
 # m = [1,2,3]
 # n= 4 in
 # inputlink = {}
